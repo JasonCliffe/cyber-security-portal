@@ -1,30 +1,61 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Cyber Security Quiz</title>
-    <link rel
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Quick phishing quiz – Cyber Security Awareness Portal</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="quiz.js" defer></script>
 </head>
 <body>
+  <header class="site-header">
+    <div class="container">
+      <h1>Quick phishing quiz</h1>
+      <p class="tagline">
+        A short question to test how you'd respond to a suspicious email.
+      </p>
+    </div>
+  </header>
 
-<h1>Cyber Security Quiz</h1>
+  <main class="container">
+    <section class="intro">
+      <h2>Question 1</h2>
+      <p>
+        You receive an email from "support@secure‑bank.co.uk" saying your
+        account will be closed today unless you click a link and enter your
+        password. You're not expecting any changes to your account.
+      </p>
+      <p><strong>What is this most likely to be?</strong></p>
+    </section>
 
-<p><strong>Question 1:</strong> What is phishing?</p>
+    <section>
+      <button class="btn" onclick="checkAnswer('A')">
+        A) A type of cyber attack
+      </button>
 
-<button onclick="checkAnswer('A')">
-A) A type of cyber attack
-</button>
+      <button class="btn" onclick="checkAnswer('B')">
+        B) A routine backup process
+      </button>
 
-<button onclick="checkAnswer('B')">
-B) A backup process
-</button>
+      <button class="btn" onclick="checkAnswer('C')">
+        C) A software update notice
+      </button>
 
-<button onclick="checkAnswer('C')">
-C) A software update
-</button>
+      <p id="result" style="margin-top: 1rem;"></p>
+    </section>
 
-<p id="result"></p>
+    <section>
+      <p>
+        <a href="phishing.html" class="btn">Read more about phishing</a>
+        <a href="index.html" class="btn">Back to homepage</a>
+      </p>
+    </section>
+  </main>
 
-quiz.js
-
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2026 Cyber Security Awareness Portal</p>
+    </div>
+  </footer>
 </body>
 </html>
